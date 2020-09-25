@@ -1,0 +1,15 @@
+title: royathletics
+email: info@royathletics.com
+description: "The only bad workout is the one that din't happen!"
+baseurl: "" 
+url: "https://royathletics.com"
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  - crew_members
+
+show_excerpts: true
+excerpt_separator: <!--snippet-->

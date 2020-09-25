@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="home">
+    {%- if site.posts.size > 0 -%}
+    {%- assign date_format = "%a, %b %-d, %Y" -%}
+    <div class="row">
+        {%- for post in site.posts -%}
+        <div class="col-sm col-xs-12">
+            {%- if post.categories contains 'herowod' -%}
+            <div class="card border-danger mb-3">
+                <div class="card-header">{{ post.date | date: date_format }}</div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ post.title }}</h5>
+                  <p class="card-text">{{ post.excerpt }}</p>
+                  <a href="{{ post.url | relative_url }}" class="card-link stretched-link"></a>
+                </div>
+              </div>
+              {%- else -%}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {%- if post.title -%}
+                        {%- capture post_title -%}{{ post.title }} -
+                        {{ post.date | date: date_format }}{%- endcapture -%}
+                        {{ post_title }}
+                        {%- else -%}
+                        {{ post.date | date: date_format }}
+                        {%- endif -%}
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <p class="card-text">{{ post.excerpt }}</p>
+                    <a href="{{ post.url | relative_url }}" class="card-link stretched-link"></a>
+                </div>
+            </div>
+            {%- endif -%}
+        </div>
+        {% endfor %}
+    </div>
+    {%- endif -%}
+
+</div>

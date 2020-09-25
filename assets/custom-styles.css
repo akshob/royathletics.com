@@ -1,0 +1,16 @@
+#site-footer {
+    padding: 20px 0 0 0;
+}
+
+.svg-icon {
+    fill: currentColor;
+    vertical-align: text-bottom;
+}
+
+.orange {
+    color: #f66a0a;
+}
+
+.home {
+    margin-top: 20px;
+}
