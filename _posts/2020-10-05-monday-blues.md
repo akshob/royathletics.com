@@ -9,7 +9,6 @@ categories: EMOM
 10 burpees
 
 Rest 5min
-<!--snippet-->
 
 EMOM 20min\
 Min1: Burpees\
@@ -17,3 +16,4 @@ Min2: Situps\
 Min3: Mountain climbers\
 Min4: Ringdips or Ringrows or Pushups\
 Min5: Double unders
+<!--snippet-->
