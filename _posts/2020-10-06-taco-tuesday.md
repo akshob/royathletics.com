@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: metcon, weekdaywod
+categories: metcon weekdaywod
 ---
 AMRAP 18\
 12 Snatches\
